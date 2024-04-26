@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna's Work</title>
+    <script src="javascript.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="logo">Luna's Work</div>
+        <nav>
+            <ul>
+                <li><div id="wishlist-section">
+                    <h2>Wishlist</h2>
+                    <div id="wishlist-content"></div>
+                </div></li>
+                <li><div id="cart-section">
+                    <h2>Cart</h2>
+                    <div id="cart-content"></div>
+                </div></li>
+                <li><input type="text" placeholder="Search products"></li>
+            
+            </ul>
+
+        </nav>
+        <div class="social-icons">
+            <a href="#"><img src="./images/icons8-instagram-48.png" alt="Instagram"></a>
+            <a href="#"><img src="./images/icons8-telegram-94.png" alt="Telegram"></a>
+        </div>
+        <div class="language-selector">
+            <select>
+                <option value="en">English</option>
+                <option value="ro">Română</option>
+                <option value="ru">Русский</option>
+            </select>
+        </div>
+    </header>
+    <div id="cart" class="cart">
+
+    </div>
+    <div class="category-buttons">
+        <button onclick="resetFilter()">Reset</button>
+        <button onclick="filterByCategory('bears')">Bears</button>
+        <button onclick="filterByCategory('monkeys')">Monkeys</button>
+        <button onclick="filterByCategory('raccoons')">Raccoons</button>
+        <button onclick="filterByCategory('pandas')">Pandas</button>
+    </div>
+
+    <main>
+        <main>
+            <!-- Bears -->
+            <div class="product" data-category="bears">
+                <img src="./images/images (1).jpg" alt="Bear Plushie">
+                <h3>Bear Plushie</h3>
+                <p>$19.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-category="bears">
+                <img src="images/AR-01779-2.jpg" alt="Bear Plushie 1">
+                <h3>Brown Bear Plushie</h3>
+                <p>$21.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-category="bears">
+                <img src="images/polarbear-1.jpg" alt="Bear Plushie 2">
+                <h3>Polar Bear Plushie</h3>
+                <p>$25.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-category="bears">
+                <img src="images/images.jpg" alt="Bear Plushie 3">
+                <h3>Grizzly Bear Plushie</h3>
+                <p>$28.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        
+            <!-- Monkeys -->
+            <div class="product" data-category="monkeys">
+                <img src="./images/vtb-22813-18ohsosoftmonkey-kbkf18010_keyword_20181025_1448.jpg" alt="Monkey Plushie">
+                <h3>Monkey Plushie</h3>
+                <p>$24.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-category="monkeys">
+                <img src="images/images (2).jpg" alt="Monkey Plushie 1">
+                <h3>Baby Monkey Plushie</h3>
+                <p>$19.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-category="monkeys">
+                <img src="images/1234048414638.jpg" alt="Monkey Plushie 2">
+                <h3>Gorilla Plushie</h3>
+                <p>$22.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-category="monkeys">
+                <img src="images/71XngH402fL.jpg" alt="Monkey Plushie 3">
+                <h3>Banana-Lover Monkey Plushie</h3>
+                <p>$24.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        
+            <!-- Raccoons -->
+            <div class="product" data-category="raccoons">
+                <img src="images/61ZZDH-r0sL.jpg" alt="Raccoon Plushie">
+                <h3>Raccoon Plushie</h3>
+                <p>$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-category="raccoons">
+                <img src="images/91qqqVGmmPL._AC_UF894,1000_QL80_.jpg" alt="Raccoon Plushie 1">
+                <h3>Masked Raccoon Plushie</h3>
+                <p>$27.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-category="raccoons">
+                <img src="images/61ZZDH-r0sL.jpg" alt="Raccoon Plushie 2">
+                <h3>Fat-Tailed Raccoon Plushie</h3>
+                <p>$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-category="raccoons">
+                <img src="images/81kITcg5x8L._AC_UF894,1000_QL80_.jpg" alt="Raccoon Plushie 3">
+                <h3>Cute Raccoon Plushie</h3>
+                <p>$32.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        
+            <!-- Pandas -->
+            <div class="product" data-category="pandas">
+                <img src="images/51sNvONm11L._AC_UF1000,1000_QL80_.jpg" alt="Panda Plushie">
+                <h3>Panda Plushie</h3>
+                <p>$34.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-category="pandas">
+                <img src="images/81HTclmxx6L._AC_UF894,1000_QL80_.jpg" alt="Panda Plushie 1">
+                <h3>Baby Panda Plushie</h3>
+                <p>$31.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-category="pandas">
+                <img src="images/51sNvONm11L._AC_UF1000,1000_QL80_.jpg" alt="Panda Plushie 2">
+                <h3>Giant Panda Plushie</h3>
+                <p>$34.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-category="pandas">
+                <img src="images/61xvqfvqrpL._AC_UF894,1000_QL80_.jpg" alt="Panda Plushie 3">
+                <h3>Cartoon Panda Plushie</h3>
+                <p>$31.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <a href="#"><img src="./images/icons8-instagram-48.png" alt="Instagram"></a>
+            <a href="#"><img src="./images/icons8-telegram-94.png" alt="Telegram"></a>
+        </div>
+    </footer>
+
+</body>
+</html>
